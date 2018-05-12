@@ -20,7 +20,7 @@ build-test: [ [make "check"] ]
 
 depends: [
   "ocamlfind" {build}
-  "omake" {build}
+  "omake" {build & < "0.10.0"}
   "hmap"
   "cohttp" {>= "0.15.0"  & <"0.99"}
   "ezjsonm" {>= "0.4.0"}
