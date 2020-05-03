@@ -1,0 +1,27 @@
+opam-version: "2.0"
+maintainer:   ["Martin Lucina <martin@lucina.net>"
+               "Thomas Gazagnaire <thomas@gazagnaire.org>"]
+homepage:     "https://gmplib.org/"
+license:      ["LGPL-3.0-only" "LGPL-2.0-only"]
+authors:      "Torbjörn Granlund and contributors"
+bug-reports:  "mirageos-devel@lists.xenproject.org"
+
+build: [
+ ["dune" "build" "-p" name "-j" jobs]
+ ["dune" "runtest" "-p" name] {with-test}
+]
+depends: [
+  "conf-m4"
+  "ocaml"
+  "dune" {>= "2.4.0"}
+]
+
+dev-repo: "git+https://github.com/samoht/ocaml-gmp.git"
+
+available: arch = "x86_64" | arch = "x86_64"
+synopsis: "The GNU Multiple Precision Arithmetic Library"
+description: "Freestanding build of GNU GMP."
+
+url {
+  src: "git+https://github.com/samoht/ocaml-gmp.git#dune"
+}
