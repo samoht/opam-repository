@@ -16,6 +16,7 @@ tags: ["org:mirage" "org:xapi-project"]
 homepage: "https://github.com/mirage/mirage"
 doc: "https://mirage.github.io/mirage/"
 bug-reports: "https://github.com/mirage/mirage/issues/"
+license:      "ISC"
 depends: [
   "ocaml" {>= "4.04.2"}
   "jbuilder" {>= "1.0+beta10"}
