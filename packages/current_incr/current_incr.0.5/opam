@@ -12,9 +12,9 @@ behaviour of the garbage collector. In particular, functions stop being called
 as soon as they are no longer needed."""
 maintainer: "talex5@gmail.com"
 authors: "talex5@gmail.com"
-homepage: "https://github.com/ocurrent/ocurrent"
-doc: "https://ocurrent.github.io/ocurrent/"
-bug-reports: "https://github.com/ocurrent/ocurrent/issues"
+homepage: "https://github.com/ocurrent/ocurrent_incr"
+doc: "https://ocurrent.github.io/ocurrent_incr/"
+bug-reports: "https://github.com/ocurrent/ocurrent_incr/issues"
 depends: [
   "ocaml" {>= "4.08.0"}
   "dune" {>= "2.0"}
@@ -24,7 +24,7 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
-dev-repo: "git+https://github.com/ocurrent/ocurrent.git"
+dev-repo: "git+https://github.com/ocurrent/ocurrent_incr.git"
 x-commit-hash: "439d1b539335ee3aa974ff6c02e09885f40056b5"
 url {
   src:
