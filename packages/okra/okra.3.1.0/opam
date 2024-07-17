@@ -39,7 +39,7 @@ build: [
 dev-repo: "git+https://github.com/tarides/okra.git"
 url {
   src:
-    "https://github.com/tarides/okra/releases/download/3.1.0/okra-3.1.0.tbz"
+    "https://github.com/tarides/opam-repository/raw/master/packages/okra/okra.3.1.0/okra-3.1.0.tbz"
   checksum: [
     "sha256=e71fd890109447815f7bd81f83fb08990f9ef030e3f43dfddfca93d6b545cfa5"
     "sha512=cd8c356bf614ec05e1e6964a9908821c9f1398bb5263d292bfbb9c2091981be4525691caa2f6401d358189687b6594c9599ef74da141cc6de5e716cc25429643"
